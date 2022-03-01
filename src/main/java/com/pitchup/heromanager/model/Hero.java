@@ -55,7 +55,7 @@ public class Hero implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Hero [id=" + id + ", nom=" + nom + ", pouvoir=" + pouvoir + "]";
+		return "Hero [id=" + id + ", nom=" + nom + ", pouvoir=" + pouvoir + ']';
 	}
 	
 	
