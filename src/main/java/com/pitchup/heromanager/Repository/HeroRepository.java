@@ -11,5 +11,5 @@ import com.pitchup.heromanager.model.Hero;
 
 public interface HeroRepository extends JpaRepository<Hero, Long> {
 
-	Hero findHeroById(Long id);
+	Optional<Hero> findHeroById(Long id);
 }

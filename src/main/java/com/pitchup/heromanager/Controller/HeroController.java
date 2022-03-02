@@ -3,6 +3,7 @@ import com.pitchup.heromanager.model.Hero;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -23,6 +24,7 @@ public class HeroController {
 	
 private final HeroService heroService;
 
+@Autowired
 public HeroController(HeroService heroService) {
 	this.heroService = heroService;
 }

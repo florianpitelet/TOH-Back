@@ -22,7 +22,7 @@ public class HeroService {
 	public Hero addHero(Hero hero) {
 		hero.setNom(hero.getNom());
 		hero.setPouvoir(hero.getPouvoir());
-		
+
 		return HeroRepository.save(hero);
 	}
 	
@@ -34,8 +34,8 @@ public class HeroService {
 		return HeroRepository.save(hero);
 	}
 	
-	public Hero findHeroById(Long id) { return HeroRepository.findHeroById(id);
-				//.orElseThrow( () -> new HeroNotFoundException("Hero by id not found"));
+	public Hero findHeroById(Long id) { return HeroRepository.findHeroById(id)
+				.orElseThrow( () -> new HeroNotFoundException("Hero by id not found"));
 	}
 	
 	public void deleteHeroById(Long id) {
